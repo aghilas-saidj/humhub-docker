@@ -30,7 +30,7 @@ RUN chmod +x /usr/bin/composer
 
 
 
-RUN apt-get install -y -q php5-gd php5-curl php5-sqlite php5-ldap php5-intl php-apc wget cron
+RUN apk add   php7-gd php7-curl php7-sqlite php7-ldap php7-intl php-apc wget cron
 
 
 
