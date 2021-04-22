@@ -29,13 +29,6 @@ COPY --from=builder-composer /usr/bin/composer /usr/bin/composer
 RUN chmod +x /usr/bin/composer
 
 
-
-RUN apk add   php7-gd php7-curl php7-sqlite php7-ldap php7-intl php-apc wget cron
-
-
-
-
-
 RUN composer install --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader
 
 
