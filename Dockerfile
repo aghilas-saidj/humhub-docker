@@ -1,6 +1,7 @@
 ARG HUMHUB_VERSION
 ARG VCS_REF
-
+RUN apk add --update apt
+RUN apk add --update apt-get
 FROM composer:2.0.12 as builder-composer
 
 FROM alpine:3.13.5 as builder
